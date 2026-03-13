@@ -51,18 +51,18 @@ sudo mkdir -p /var/www/jerney
 sudo chown -R $USER:$USER /var/www/jerney
 
 # Copy project files (assumes you've transferred them to ~/Jerney)
-cp -r ~/Jerney/* /var/www/jerney/
+sudo cp -r ~/Jerney/* /var/www/jerney/
 
 # --- Install backend dependencies ---
 echo "📦 Installing backend dependencies..."
 cd /var/www/jerney/backend
-npm install --production
+sudo npm install --production
 
 # --- Build frontend ---
 echo "🔨 Building frontend..."
 cd /var/www/jerney/frontend
-npm install
-npm run build
+sudo npm install
+sudo npm run build
 
 # --- Configure Nginx ---
 echo "🌐 Configuring Nginx..."
