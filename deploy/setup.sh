@@ -78,7 +78,7 @@ echo "🚀 Starting backend with PM2..."
 cd /var/www/jerney/backend
 pm2 start src/index.js --name jerney-backend
 pm2 save
-pm2 startup systemd -u $USER --hp /home/$USER | tail -1 | sudo bash
+# pm2 startup systemd -u $USER --hp /home/$USER | tail -1 | sudo bash
 
 echo ""
 echo "==========================================="
